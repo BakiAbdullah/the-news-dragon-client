@@ -9,7 +9,7 @@ const Category = () => {
   console.log(id)
   return (
     <div className='mt-4'>
-      <h2>This is a Category page: {categoryNews.length}</h2>
+      {/* <h2>This is a Category page: {categoryNews.length}</h2> */}
       {
         categoryNews.map(news=> <NewsCard key={news._id} news={news}></NewsCard>)
       }
