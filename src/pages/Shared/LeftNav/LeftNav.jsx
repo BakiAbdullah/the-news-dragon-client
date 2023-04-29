@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import first from '../../../assets/1.png'
-import second from '../../../assets/2.png'
-import third from '../../../assets/3.png'
+import first from "../../../assets/1.png";
+import second from "../../../assets/2.png";
+import third from "../../../assets/3.png";
 
 const LeftNav = () => {
   const [categories, setCategories] = useState([]);
 
-  useEffect(()=>{
-    fetch("http://localhost:5000/categories")
+  useEffect(() => {
+    fetch("https://the-news-dragon-server-bakiabdullah.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((error) => console.error(error));
@@ -38,10 +38,10 @@ const LeftNav = () => {
             <Card>
               <Card.Img variant="top" src={first} />
               <Card.Body>
-                <Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
-                <Card.Text className="fw-semibold">
-                  Sports
-                </Card.Text>
+                <Card.Title>
+                  Bayern Slams Authorities Over Flight Delay to Club World Cup
+                </Card.Title>
+                <Card.Text className="fw-semibold">Sports</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -49,10 +49,10 @@ const LeftNav = () => {
             <Card>
               <Card.Img variant="top" src={second} />
               <Card.Body>
-                <Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
-                <Card.Text className="fw-semibold">
-                  Sports
-                </Card.Text>
+                <Card.Title>
+                  Bayern Slams Authorities Over Flight Delay to Club World Cup
+                </Card.Title>
+                <Card.Text className="fw-semibold">Sports</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -60,10 +60,10 @@ const LeftNav = () => {
             <Card>
               <Card.Img variant="top" src={third} />
               <Card.Body>
-                <Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
-                <Card.Text className="fw-semibold">
-                  Sports
-                </Card.Text>
+                <Card.Title>
+                  Bayern Slams Authorities Over Flight Delay to Club World Cup
+                </Card.Title>
+                <Card.Text className="fw-semibold">Sports</Card.Text>
               </Card.Body>
             </Card>
           </Col>
